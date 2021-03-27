@@ -4,7 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="generate_hashing">Generate Hashing</string>
     <string name="text_input">Enter your text here…</string>
-    
+    <string name="successful_hash">Hash successfully generated</string>
+
     <string-array name="algorithms">
         <item>SHA-256</item>
         <item>SHA-512</item>
