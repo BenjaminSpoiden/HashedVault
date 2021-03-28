@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/data_container_cardView"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="@color/card_color"
+        android:layout_height="100dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/teal_200"
+            />
+
+        <LinearLayout
+            android:id="@+id/main_container_layout"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/key_container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/key_imageView"
+                    android:src="@drawable/ic_baseline_vpn_key_24"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/key" />
+
+                <TextView
+                    android:id="@+id/key_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="italic|bold"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"
+                    tools:text="ce28503329567bd0ee0fd2de98de1f69300c156717f29fd079d5c75263c8df5f"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dates_container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/dark_blue"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:src="@drawable/ic_baseline_calendar_today_24"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/calendar" />
+
+                    <TextView
+                        android:id="@+id/data_createdAt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="8dp"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        tools:text="Encoded the 28/03/2021"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/dark_blue"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:src="@drawable/ic_file_white"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/calendar" />
+
+                    <TextView
+                        android:id="@+id/dataType_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="8dp"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        tools:text="Type of File: PDF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

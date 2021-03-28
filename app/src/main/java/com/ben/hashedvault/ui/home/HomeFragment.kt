@@ -1,7 +1,6 @@
-package com.ben.hashedvault.view
+package com.ben.hashedvault.ui.home
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.ArrayAdapter
 import androidx.lifecycle.lifecycleScope
@@ -9,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.ben.hashedvault.R
 import com.ben.hashedvault.databinding.FragmentHomeBinding
 import com.ben.hashedvault.interfaces.CopyListener
-import com.ben.hashedvault.viewmodel.HomeViewModel
+import com.ben.hashedvault.ui.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -25,7 +24,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(), CopyLis
         setHasOptionsMenu(true)
         return FragmentHomeBinding.inflate(inflater, container, false)
     }
-
 
     override fun bindViewModel(): Class<HomeViewModel> = HomeViewModel::class.java
 

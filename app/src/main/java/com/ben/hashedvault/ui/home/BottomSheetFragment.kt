@@ -1,4 +1,4 @@
-package com.ben.hashedvault.view
+package com.ben.hashedvault.ui.home
 
 import android.animation.ObjectAnimator
 import android.app.Dialog
@@ -8,23 +8,15 @@ import android.content.Context
 import android.content.DialogInterface
 import android.graphics.Color
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.animation.addListener
 import androidx.core.animation.doOnEnd
 import androidx.navigation.fragment.navArgs
-import com.ben.hashedvault.R
 import com.ben.hashedvault.databinding.FragmentBottomSheetBinding
 import com.ben.hashedvault.interfaces.CopyListener
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import java.util.*
-import kotlin.concurrent.schedule
 
 class BottomSheetFragment : BottomSheetDialogFragment() {
 

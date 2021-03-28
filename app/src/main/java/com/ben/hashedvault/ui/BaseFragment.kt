@@ -1,19 +1,15 @@
-package com.ben.hashedvault.view
+package com.ben.hashedvault.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import com.ben.hashedvault.repository.HashedVaultRepository
-import com.ben.hashedvault.viewmodel.ViewModelFactory
-import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
-import kotlin.reflect.KClass
 
 
 abstract class BaseFragment<VB: ViewBinding, VM: ViewModel> : Fragment() {

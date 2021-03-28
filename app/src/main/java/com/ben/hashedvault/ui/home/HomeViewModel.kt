@@ -1,4 +1,4 @@
-package com.ben.hashedvault.viewmodel
+package com.ben.hashedvault.ui.home
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

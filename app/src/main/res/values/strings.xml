@@ -5,6 +5,11 @@
     <string name="generate_hashing">Generate Hashing</string>
     <string name="text_input">Enter your text here…</string>
     <string name="successful_hash">Hash successfully generated</string>
+    <string name="no_data">No Data Placeholder</string>
+    <string name="no_data_text">There is currently no data…</string>
+    <string name="key">Key</string>
+    <string name="copy">Copy</string>
+    <string name="calendar">calendar</string>
 
     <string-array name="algorithms">
         <item>SHA-256</item>

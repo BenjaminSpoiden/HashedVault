@@ -1,4 +1,4 @@
-package com.ben.hashedvault.view
+package com.ben.hashedvault.ui.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
