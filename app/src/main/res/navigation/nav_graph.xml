@@ -14,11 +14,6 @@
             app:destination="@id/bottomSheetFragment" />
     </fragment>
     <fragment
-        android:id="@+id/successFragment"
-        android:name="com.ben.hashedvault.view.SuccessFragment"
-        android:label="Success"
-        tools:layout="@layout/fragment_success" />
-    <fragment
         android:id="@+id/yourDataFragment"
         android:name="com.ben.hashedvault.view.YourDataFragment"
         android:label="Your Data"
@@ -36,10 +31,13 @@
     <dialog
         android:id="@+id/bottomSheetFragment"
         android:name="com.ben.hashedvault.view.BottomSheetFragment"
-        android:label="fragment_bottom_sheet"
-        tools:layout="@layout/fragment_bottom_sheet" >
+        android:label="Success"
+        tools:layout="@layout/fragment_bottom_sheet">
         <action
             android:id="@+id/action_bottomSheetFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="hashedValue"
+            app:argType="string" />
     </dialog>
 </navigation>
